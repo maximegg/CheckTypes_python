@@ -5,13 +5,13 @@ class CheckTypesMeta(type):
 	def check_arg_types(func, args, arg_types):
 		for arg_name, arg in zip(arg_types.keys(), args):
 			if not isinstance(arg, arg_types[arg_name]):
-				raise TypeError(f"L'argument {arg_name} n'est pas du type {arg_types[arg_name]}")
+				raise TypeError(f"Argument {arg_name} is not of type {arg_types[arg_name]}")
 
 	@staticmethod
 	def check_kwarg_types(kwargs, arg_types):
 		for key, value in kwargs.items():
 			if key in arg_types and not isinstance(value, arg_types[key]):
-				raise TypeError(f"L'argument {key} n'est pas du type {arg_types[key]}")
+				raise TypeError(f"Argument {key} is not of type {arg_types[key]}")
 
 	@staticmethod
 	def check_types_decorator(func):
@@ -21,7 +21,7 @@ class CheckTypesMeta(type):
 			arg_names.remove("self")
 			for arg_name in arg_names:
 				if arg_name not in arg_types:
-					raise TypeError(f"L'argument {arg_name} n'est pas typé")
+					raise TypeError(f"Argument {arg_name} does not have a type annotation")
 			CheckTypesMeta.check_arg_types(func, args, arg_types)
 			CheckTypesMeta.check_kwarg_types(kwargs, arg_types)
 			return func(self, *args, **kwargs)
