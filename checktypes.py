@@ -5,6 +5,8 @@ class CheckTypesMeta(type):
 	def check_types_decorator(func):
 		def wrapper(self, *args, **kwargs):
 			arg_types = func.__annotations__
+			if not arg_types:
+				raise TypeError("La méthode n'est pas typée")
 			for arg_name, arg in zip(arg_types.keys(), args):
 				if not isinstance(arg, arg_types[arg_name]):
 					raise TypeError(f"L'argument {arg_name} n'est pas du type {arg_types[arg_name]}")
