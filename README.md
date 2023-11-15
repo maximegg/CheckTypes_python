@@ -20,7 +20,7 @@ GitHub Copilot: Voici un exemple plus détaillé de `README.md` pour votre proje
 
 ## Description
 
-Ce projet contient une métaclasse Python, `CheckTypesMeta`, qui applique un décorateur de vérification de type à toutes les méthodes d'une classe. Le décorateur vérifie si les types des arguments passés à une fonction correspondent aux annotations de type de cette fonction. Si ce n'est pas le cas, il lève une exception `TypeError`.
+Ce projet contient une métaclasse Python, `CheckTypesMeta`, qui applique un décorateur de vérification de type à toutes les méthodes d'une classe. Le décorateur vérifie si les types des arguments passés à une fonction correspondent aux annotations de type de cette fonction. Si ce n'est pas le cas, il lève une exception `TypeError`. Il vérifie également si les arguments possêdent bien un type. Si ce n'est pas le cas, il lève une exception `TypeError`.
 
 ## Installation
 
