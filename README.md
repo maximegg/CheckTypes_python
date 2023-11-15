@@ -27,7 +27,7 @@ Ce projet contient une métaclasse Python, `CheckTypesMeta`, qui applique un dé
 Pour installer ce projet, vous devez cloner ce dépôt sur votre machine locale. Vous pouvez le faire en utilisant la commande suivante :
 
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/maximegg/CheckTypes_python.git
 ```
 
 ## Utilisation
