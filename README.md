@@ -2,24 +2,6 @@
 
 ## Description
 
-Ce projet contient une métaclasse Python, `CheckTypesMeta`, qui applique un décorateur de vérification de type à toutes les méthodes d'une classe. Le décorateur vérifie si les types des arguments passés à une fonction correspondent aux annotations de type de cette fonction. Si ce n'est pas le cas, il lève une exception `TypeError`.
-
-## Installation
-
-Pour installer ce projet, vous devez cloner ce dépôt sur votre machine locale. Vous pouvez le faire en utilisant la commande suivante :
-
-```bash
-git clone https://github.com/maximegg/CheckTypes_python.git
-```
-
-## Utilisation
-
-GitHub Copilot: Voici un exemple plus détaillé de `README.md` pour votre projet :
-
-# Métaclasse de vérification de type en Python
-
-## Description
-
 Ce projet contient une métaclasse Python, `CheckTypesMeta`, qui applique un décorateur de vérification de type à toutes les méthodes d'une classe. Le décorateur vérifie si les types des arguments passés à une fonction correspondent aux annotations de type de cette fonction. Si ce n'est pas le cas, il lève une exception `TypeError`. Il vérifie également si les arguments possêdent bien un type. Si ce n'est pas le cas, il lève une exception `TypeError`.
 
 ## Installation
